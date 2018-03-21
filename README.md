@@ -11,19 +11,14 @@ With the app, you can:
 * Average rating.
 * Infinite scroll.
 
-## Add your API-KEY
-
-This app uses [The Movie Database](https://www.themoviedb.org/documentation/api) API to retrieve movies.
-You must provide your own API key in order to build the app. When you get it, just paste it to:
-    ```
-    build.gradle(module:app)
-    ```
 ## Architecture
 A brief overview.
-A higher level architecture division
+A higher level architecture.
 # UI/Data
-# API/DB
+![ViewModels Activity](https://github.com/45minutepromise/MoviesDbKotlin/blob/master/Screen%20Shot%202018-03-22%20at%204.00.35%20AM.png)
 
+# API/DB
+![Data in ViewModels]https://github.com/45minutepromise/MoviesDbKotlin/blob/master/ViewModels.png
 
 ## Libraries
 
@@ -31,9 +26,9 @@ A higher level architecture division
 * [RxAndroid](https://github.com/ReactiveX/RxAndroid)
 * [Dagger](https://github.com/google/dagger)
 * [Retrofit2](https://github.com/square/retrofit)
-* [Picasso] (http://square.github.io/picasso/)
-* [OkHttp] (http://square.github.io/okhttp/)
-* [Gson] (https://github.com/google/gson)
+* [Picasso](http://square.github.io/picasso/)
+* [OkHttp](http://square.github.io/okhttp/)
+* [Gson](https://github.com/google/gson)
 
 ## Testing
-Code is well tested, But, due to time constraints, its not even close to 90% tested.
+Code is well tested. But, due to time constraints, its not even close to 90% tested :(.
