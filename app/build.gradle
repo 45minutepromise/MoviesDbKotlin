@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    defaultConfig {
+        applicationId "com.mobile.app.themovies"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        buildConfigField 'String', 'API_KEY', '"65330944ca3e4e249d239e1c0039b470"'
+        buildConfigField 'String', 'BASE_URL', '"https://api.themoviedb.org/3/"'
+        buildConfigField 'String', 'IMAGES_BASE_URL', '"https://image.tmdb.org/t/p/"'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':service')
+
+    implementation appDependencies.supportAppCompatV7
+    implementation appDependencies.supportV13
+    implementation appDependencies.supportAnnotation
+    implementation appDependencies.supportCardView
+    implementation appDependencies.supportRecyclerView
+    implementation appDependencies.constraintLayout
+    implementation appDependencies.supportDesign
+
+    implementation appDependencies.archLifecycleRuntime
+    implementation appDependencies.archLifecycleReactiveStreams
+    kapt appDependencies.archLifecycleCompiler
+
+    implementation appDependencies.picasso
+
+    implementation appDependencies.dagger2
+    implementation appDependencies.daggerSupport
+    implementation appDependencies.roomRxJava
+
+
+    kapt appDependencies.daggerProcessor
+    kapt appDependencies.dagger2Compiler
+    kapt appDependencies.roomCompiler
+
+    compileOnly appDependencies.javaxAnnotation
+
+    implementation appDependencies.rxAndroid
+
+    implementation appDependencies.okHttp
+    implementation appDependencies.okHttpInterceptor
+    implementation appDependencies.retrofit2
+    implementation appDependencies.retrofitRxAdapter
+    implementation appDependencies.retrofitConverter
+
+    implementation appDependencies.roomRuntime
+
+    testImplementation testDependencies.junit
+    testImplementation testDependencies.assertj
+    testImplementation testDependencies.mockitoKotlin
+    testCompile testDependencies.archTest
+
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+}
