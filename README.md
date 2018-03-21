@@ -18,7 +18,7 @@ A higher level architecture.
 ![ViewModels Activity](https://github.com/45minutepromise/MoviesDbKotlin/blob/master/Screen%20Shot%202018-03-22%20at%204.00.35%20AM.png)
 
 # API/DB
-![Data in ViewModels](https://github.com/45minutepromise/MoviesDbKotlin/blob/master/ViewModels.png
+![Data in ViewModels](https://github.com/45minutepromise/MoviesDbKotlin/blob/master/ViewModels.png)
 
 ## Libraries
 
