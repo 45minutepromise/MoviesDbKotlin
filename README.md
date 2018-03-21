@@ -29,6 +29,3 @@ A higher level architecture.
 * [Picasso](http://square.github.io/picasso/)
 * [OkHttp](http://square.github.io/okhttp/)
 * [Gson](https://github.com/google/gson)
-
-## Testing
-Code is well tested. But, due to time constraints, its not even close to 90% tested :(.
